@@ -19,3 +19,8 @@ Some useless scripts I wrote.
 ** colors.sh
 
 An extremely over-engineered display of the 256-color palate.
+
+** reader.pl
+
+Display text with extremely long lines in an outdented format.
+Requires the Perl Text::Tabs+Wrap package.
