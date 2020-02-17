@@ -1,0 +1,21 @@
+#+TITLE: Bin scripts
+#+AUTHOR: Jeff Carlson
+
+* Preface
+
+Some useless scripts I wrote.
+
+* Installation
+
+#+BEGIN_SRC shell
+  mkdir $HOME/bin
+  for i in [a-z]* ; do
+      cp $i $HOME/bin/
+  done
+#+END_SRC
+
+* Contents
+
+** colors.sh
+
+An extremely over-engineered display of the 256-color palate.
