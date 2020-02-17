@@ -31,3 +31,10 @@ Here's an example to make the output of opkg easier to read.
   ssh openwrt opkg list > /tmp/opkg.list
   reader.pl /tmp/opkg.list | less
 #+END_SRC
+
+** spa.py
+
+*Single Packet Authentication*
+
+Send an SPA packet to a pknock-protected Linux firewall.  Requires the
+Python Crypto.Hash module.
