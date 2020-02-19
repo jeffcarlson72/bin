@@ -20,6 +20,12 @@ Some useless scripts I wrote.
 
 An extremely over-engineered display of the 256-color palate.
 
+** iptnum.awk
+
+#+BEGIN_SRC shell
+  iptables-save | iptnum.awk
+#+END_SRC
+
 ** reader.pl
 
 Display text with extremely long lines in an outdented format.
