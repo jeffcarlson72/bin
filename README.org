@@ -28,8 +28,8 @@ An extremely over-engineered display of the 256-color palate.
 
 ** reader.pl
 
-Display text with extremely long lines in an outdented format.
-Requires the Perl Text::Tabs+Wrap package.
+Display text with very long lines in an outdented format.  Requires
+the Perl Text::Tabs+Wrap package.
 
 Here's an example to make the output of opkg easier to read.
 
@@ -44,3 +44,8 @@ Here's an example to make the output of opkg easier to read.
 
 Send an SPA packet to a pknock-protected Linux firewall.  Requires the
 Python Crypto.Hash module.
+
+** ssh-menu.sh
+
+Reads your =known_hosts= files and builds an ncurses menu of hosts to
+select as ssh destinations.
