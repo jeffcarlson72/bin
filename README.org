@@ -49,3 +49,8 @@ Python Crypto.Hash module.
 
 Reads your =known_hosts= files and builds an ncurses menu of hosts to
 select as ssh destinations.
+
+** xssh-menu.sh
+
+Same as ssh-menu.sh, but launches a zenity GUI to pick a host.  Set a
+TERMINAL environment variable to launch something other than xterm.
