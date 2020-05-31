@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 menu ()
 {
@@ -31,9 +31,11 @@ SELECTED=$(
     dialog --title 'SSH Menu'			      \
 	   --menu 'Destination:' $HEIGHT $WIDTH $FORM \
 	   $( menu ) 2>&1 1>&3
-    [ $? -ne 0 ] && exit $?
+    [ $? -ne 0 ] && echo -1
 )
 exec 3>&-
 
+clear
 let SELECTED-=1
+[ $SELECTED -lt 0 ] && exit
 ssh ${HOSTS[$SELECTED]}
