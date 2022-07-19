@@ -20,6 +20,10 @@ Some useless scripts I wrote.
 
 An extremely over-engineered display of the 256-color palate.
 
+** fed-up.sh
+
+Fedora Upgrade script based on [[https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/][DNF System Upgrade]].  This needs to be run as root.
+
 ** iptnum.awk
 
 #+BEGIN_SRC shell
