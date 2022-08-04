@@ -1,6 +1,6 @@
 #!/bin/sh
 
-[ $( id -u ) == 0 ] || echo "Run $0 as root" && exit
+[ $( id -u ) != 0 ] && echo "Run $0 as root" && exit
 
 dnf install dnf-plugin-system-upgrade dnf-utils rpmconf
 
