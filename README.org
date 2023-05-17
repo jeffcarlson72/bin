@@ -22,13 +22,22 @@ An extremely over-engineered display of the 256-color palate.
 
 ** fed-up.sh
 
-Fedora Upgrade script based on [[https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/][DNF System Upgrade]].  This needs to be run as root.
+Fedora Upgrade script based on [[https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/][DNF System Upgrade]].  This needs to be
+run as root.
 
 ** iptnum.awk
 
 #+BEGIN_SRC shell
   iptables-save | iptnum.awk
 #+END_SRC
+
+** nsurl.sh
+
+Have you ever seen an article on some website (perhaps on your phone)
+and you wanted to read it later when you were at your desk?  Just
+=ssh= back to your desktop at home and pass the URL to this script.
+It will leave a link (using =notify-send=) to the URL waiting on your
+desktop for your return.
 
 ** reader.pl
 
