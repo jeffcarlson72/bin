@@ -9,12 +9,12 @@ output()
 
 show()
 {
-    C=$[${1}+${2}]
-    if [ -z "$BGONLY" ] ; then
-        output setaf $C
+    c=$[${1}+${2}]
+    if [ -z "$bgonly" ] ; then
+        output setaf $c
     fi
-    if [ -z "$FGONLY" ] ; then
-        output setab $C
+    if [ -z "$fgonly" ] ; then
+        output setab $c
     fi
 }
 
@@ -32,13 +32,13 @@ usage()
 while getopts "bcfh" OPT ; do
     case $OPT in
         b)
-            BGONLY=1
+            bgonly=1
             ;;
         c)
-            COLORS=1
+            colors=1
             ;;
         f)
-            FGONLY=1
+            fgonly=1
             ;;
         h)
             usage
@@ -47,21 +47,21 @@ while getopts "bcfh" OPT ; do
 done
 shift $[OPTIND-1]
 
-if [ -n "$BGONLY" -a -n "$FGONLY" ] ; then
+if [ -n "$bgonly" -a -n "$fgonly" ] ; then
     usage
 fi
 
-if [ -n "$COLORS" ] ; then
-    for (( A=16 ; A<232 ; A=(A+6) )) ; do
-        for B in {0..5} ; do
-	    show $A $B
+if [ -n "$colors" ] ; then
+    for (( a=16 ; a<232 ; a=(a+6) )) ; do
+        for b in {0..5} ; do
+	    show $a $b
         done
         echo
     done
 else
-    for A in {0..31} ; do
-        for (( B=0 ; B<255 ; B=(B+32) )) ; do
-	    show $A $B
+    for a in {0..31} ; do
+        for (( b=0 ; b<255 ; b=(b+32) )) ; do
+	    show $a $b
         done
         echo
     done
